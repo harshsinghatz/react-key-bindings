@@ -4,7 +4,7 @@
   "description": "An light weight library for having key bindings in a clean way",
   "title": "React Key Bindings",
   "type": "module",
-  "main": "./dist/bundle.js",
+  "main": "./src/index.tsx",
   "keywords": [
     "keybinding",
     "light-weight",
