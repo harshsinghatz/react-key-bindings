@@ -1,9 +1,24 @@
 {
-  "name": "react-key-bindings",
-  "private": true,
+  "name": "@harshsinghatz/react-key-bindings",
   "version": "0.0.0",
   "description": "An light weight library for having key bindings in a clean way",
+  "title": "React Key Bindings",
   "type": "module",
+  "main": "./dist/bundle.js",
+  "keywords": [
+    "keybinding",
+    "light-weight",
+    "hook",
+    "component",
+    "components",
+    "frontend",
+    "react",
+    "react-component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshsinghatz/react-key-bindings"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
