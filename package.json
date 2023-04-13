@@ -1,10 +1,10 @@
 {
   "name": "@harshsinghatz/react-key-bindings",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "An light weight library for having key bindings in a clean way",
   "title": "React Key Bindings",
   "type": "module",
-  "main": "./src/index.tsx",
+  "main": "./dist/index.js",
   "keywords": [
     "keybinding",
     "light-weight",
@@ -21,7 +21,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs && vite build",
+    "build:esm": "tsc && vite build",
+    "build": "tsc",
+    "prepare": "yarn build",
     "preview": "vite preview"
   },
   "dependencies": {

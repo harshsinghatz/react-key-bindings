@@ -5,11 +5,10 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // target: './dist/index.js',
     rollupOptions: {
-      input: './src/index.tsx',
+      input: './src',
       output: {
-        entryFileNames: "bundle.js",
+        entryFileNames: "index.js",
       }
     }
   }
