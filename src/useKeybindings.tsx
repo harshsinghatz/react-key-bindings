@@ -5,7 +5,7 @@ interface KeyBinding {
   callback: () => any,
 }
 
-const useKeybindings = (props: KeyBinding[]) => {
+export const useKeybindings = (props: KeyBinding[]) => {
   const currentlyPressedKeys = new Set();
 
   const areAllKeyPressed = (keys: string[]) => {
@@ -39,4 +39,3 @@ const useKeybindings = (props: KeyBinding[]) => {
   }, []);
 };
 
-export default useKeybindings;
